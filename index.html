@@ -1,0 +1,96 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru" dir="ltr">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pleer</title>
+<body>
+
+<video id="myvideo" width="620" controls="controls">
+    <source src="https://bioconcept.ru/video/podtaygka_lica_i_shei_092022/10092022.mp4" type="video/mp4">
+</video>
+<div>
+	<div style="margin: 20px 0;font-size:26px;font-weight: bold;">Тут можно мотануть:</div>
+	<div id="jump1" style="text-decoration:underline;margin: 10px 0;cursor: pointer;">Перейти сразу на видос, не ждать заставку</div>
+	<div id="jump2" style="text-decoration:underline;margin: 10px 0;cursor: pointer;">Четыре рожи мужика</div>
+	<div id="jump3" style="text-decoration:underline;margin: 10px 0;cursor: pointer;">Тётка в чёрных очках</div>
+	<div id="jump4" style="text-decoration:underline;margin: 10px 0;cursor: pointer;">Поднимают шкурку</div>
+	<div id="jump5" style="text-decoration:underline;margin: 10px 0;cursor: pointer;">Какой то текст</div>
+	<div id="jump6" style="text-decoration:underline;margin: 10px 0;cursor: pointer;">Что то страшное</div>
+</div>
+
+<script>
+var myvideo = document.getElementById('myvideo'),
+	jumplink1 = document.getElementById('jump1'),
+	jumplink2 = document.getElementById('jump2'),
+    jumplink3 = document.getElementById('jump3'),
+	jumplink4 = document.getElementById('jump4'),
+	jumplink5 = document.getElementById('jump5'),
+    jumplink6 = document.getElementById('jump6'),
+	timelink = document.getElementById('jump');
+
+//jump1
+jumplink1.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.play();
+    myvideo.pause();
+    myvideo.currentTime =694;
+    myvideo.play();
+}, false);
+
+//jump2
+jumplink2.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.play();
+    myvideo.pause();
+    myvideo.currentTime =2081;
+    myvideo.play();
+}, false);
+
+//jump3
+jumplink3.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.play();
+    myvideo.pause();
+    myvideo.currentTime =3222;
+    myvideo.play();
+}, false);
+
+//jump4
+jumplink4.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.play();
+    myvideo.pause();
+    myvideo.currentTime =12196;
+    myvideo.play();
+}, false);
+
+//jump5
+jumplink5.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.play();
+    myvideo.pause();
+    myvideo.currentTime =20919;
+    myvideo.play();
+}, false);
+
+//jump6
+jumplink6.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.play();
+    myvideo.pause();
+    myvideo.currentTime =27464;
+    myvideo.play();
+}, false);
+
+//click on video
+myvideo.addEventListener("click", function () {
+    if (myvideo.paused) {
+        myvideo.play();
+    } else {
+        myvideo.pause();
+    }
+}, false);
+
+</script>
+
+</body>
+</html>
